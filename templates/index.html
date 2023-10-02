@@ -1,0 +1,241 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+    <div class="nav">
+        <div class="nav-left">
+            <div class="nav-item"><img class="nav-logo" src="{% static "icon/PhiWithMe.png" %}"></div>
+            <div class="nav-item">
+                <div class="nav-title">PhiWithMe</div>
+            </div>
+            <div class="nav-right">
+                <div class="nav-item">
+                    <div class="manage">⚙ 管理</div>
+                </div>
+                <div class="nav-item">
+                    <div class="flex user">
+                        <img class="avatar" src="{% static "icon/default_user.png" %}">
+                        <div class="nickname">myworldzycpc</div>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <div class="flex create-project-box" data-pressure-scale="1.1">
+                        <div class="create-project">新建项目</div>
+                        <img src="{% static "icon/add.svg" %}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-top">
+            <div class="sidebar-item">
+                <img class="sidebar-icon" src="{% static "icon/all.svg" %}">
+                <div class="sidebar-title">所有</div>
+                <div class="sidebar-badge administrator-exclusive">管理员专属</div>
+            </div>
+            <div class="sidebar-item">
+                <img class="sidebar-icon" src="{% static "icon/user_fobidden.png" %}">
+                <div class="sidebar-title">对我隐藏的</div>
+                <div class="sidebar-badge administrator-exclusive">管理员专属</div>
+            </div>
+            <div class="sidebar-item">
+                <img class="sidebar-icon" src="{% static "icon/public.svg" %}">
+                <div class="sidebar-title">公开</div>
+            </div>
+            <div class="sidebar-item">
+                <img class="sidebar-icon" src="{% static "icon/user_add.png" %}">
+                <div class="sidebar-title">我创建的</div>
+            </div>
+            <div class="sidebar-item">
+                <img class="sidebar-icon" src="{% static "icon/user_edit.png" %}">
+                <div class="sidebar-title">我能编辑的</div>
+            </div>
+            <div class="sidebar-item">
+                <img class="sidebar-icon" src="{% static "icon/user_view.png" %}">
+                <div class="sidebar-title">我能查看的</div>
+            </div>
+            <div class="sidebar-item">
+                <img class="sidebar-icon" src="{% static "icon/star.svg" %}">
+                <div class="sidebar-title">我收藏的</div>
+            </div>
+        </div>
+        <div class="sidebar-bottom">
+            <div class="sidebar-item">
+                <img class="sidebar-icon" src="{% static "icon/bin.svg" %}">
+                <div class="sidebar-title">回收站</div>
+            </div>
+            <div class="sidebar-item">
+                <img class="sidebar-icon" src="{% static "icon/bin_server.png" %}">
+                <div class="sidebar-title">全服回收站</div>
+            </div>
+            <div class="sidebar-item">
+                <img class="sidebar-icon" src="{% static "icon/help.svg" %}">
+                <div class="sidebar-title">帮助文档</div>
+            </div>
+            <div class="sidebar-item">
+                <img class="sidebar-icon" src="{% static "icon/info.svg" %}">
+                <div class="sidebar-title">关于</div>
+            </div>
+            <div class="sidebar-item">
+                <img class="sidebar-icon" src="{% static "icon/settings.svg" %}">
+                <div class="sidebar-title">设置</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="top-right">
+        <div class="search-box">
+            <input class="search-input" placeholder="搜索...">
+            <img class="search-button" src="{% static "icon/search.svg" %}">
+        </div>
+        <div class="filter-sort-box">
+            <img class="filter-button" src="{% static "icon/filter.svg" %}">
+            <img class="sort-button" src="{% static "icon/sort.svg" %}">
+        </div>
+        <div class="view-box">
+            <img class="grid-button" src="{% static "icon/grid.svg" %}">
+            <img class="list-button" src="{% static "icon/list.svg" %}">
+        </div>
+        <div class="multi-box">
+            <img class="multi-button" src="{% static "icon/multi.svg" %}">
+        </div>
+    </div>
+    <div class="chart-list-box">
+        <div class="chart-list">
+            <div class="chart" data-pressure-scale="1.1" data-enter-chart="1">
+                <div class="illustration"></div>
+                <div class="info">
+                    <div class="info-top">
+                        <div class="title">Phigros Themes</div>
+                        <div class="length">2:30</div>
+                    </div>
+                    <div class="info-bottom">
+                        <div class="little">
+                            <div class="little-info">创建者：<img class="avatar" src="{% static "icon/default_user.png" %}"></div>
+                            <div class="little-info">（公开）</div>
+                        </div>
+                        <div class="operations">
+                            <div class="operation-btn">轻触查看详情<br>猛戳进入</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chart-details-background" style="display: none">
+        <div class="chart-details">
+            <div class="top">
+                <div class="illustration" style="display: flex; align-items: end;">
+                    <div class="bottom" style="margin: 5px; flex: 2;">
+                        <div class="left" style="display: flex;">
+                            <div class="length" style="background-color: #e0e0e0a0; border-radius: 4px; padding: 4px;">2:15
+                            </div>
+                            <img class="play" src="/static/icon/play.svg" style="height: 20px; background-color: #e0e0e0a0; border-radius: 4px; padding: 4px; margin-left: 6px;">
+                        </div>
+                        <div class="right" style="flex: 2; display: flex; justify-content: right;">
+                            <img class="edit" src="/static/icon/edit.svg" style="height: 20px; background-color: #e0e0e0a0; border-radius: 4px; padding: 4px; margin-left: 6px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="info-main">
+                    <div class="title">
+                        <div class="title-text">Phigros Themes</div>
+                        <img class="title-edit" src="/static/icon/edit.svg">
+                    </div>
+                    <div class="little">
+                        <div class="little-one">
+                            <div class="little-one-title">创建者：</div>
+                            <div class="little-one-content">
+                                <div class="one-user">
+                                    <img class="avatar" src="/static/icon/default_user.png">
+                                    <div class="nickname">myworldzycpc</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="little-one">
+                            <div class="little-one-title">参与人：</div>
+                            <div class="little-one-content">（公开）</div>
+                        </div>
+                        <div class="little-one">
+                            <div class="little-one-title">创建日期：</div>
+                            <div class="little-one-content">2023年10月2日7:27</div>
+                        </div>
+                        <div class="little-one">
+                            <div class="little-one-title">修改日期：</div>
+                            <div class="little-one-content">2023年10月2日7:27</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom" style="margin-top: 20px;">
+                <div class="meta" style="">
+                    <div class="title">
+                        <div class="title-text" style="font-size: 18px;">谱面元信息
+                        </div>
+                        <img class="title-edit" src="/static/icon/edit.svg" style="height: 18px;"></div>
+                    <div class="info">
+                        <div class="info-one" style="">
+                            <div class="info-title">基础BPM：</div>
+                            <div class="info-content">60</div>
+                        </div>
+                        <div class="info-one">
+                            <div class="info-title">曲师：</div>
+                            <div class="info-content">姜米條/Rinth/Pigeon Games</div>
+                        </div>
+                        <div class="info-one">
+                            <div class="info-title">谱师：</div>
+                            <div class="info-content" style="word-break: keep-all; text-overflow: ellipsis; overflow: hidden;">myworldzycpc/DataErr0r/tang_chao_ji_yan
+                            </div>
+                        </div>
+                        <div class="info-one">
+                            <div class="info-title">难度：</div>
+                            <div class="info-content">13.6</div>
+                        </div>
+                        <div class="info-one" style="display: block;">
+                            <div class="info-title block" style="">描述：
+                            </div>
+                            <div class="info-content" style="margin-top: 10px; padding: 10px; background-color: #ffffff; border-radius: 6px;">
+                                这是一个由一群热爱音游的玩家自发组织的团队.<br>
+                                故事由此开始.<br>
+                                让你感受到节奏类游戏的魅力。<br>
+                                永远相信，美好的事情，即将发生。<br>
+                                —— Pigeon Games
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="summary" style="margin-left: 20px;">
+                    <div class="title" style="font-size: 18px;">谱面概要
+                    </div>
+                    <div class="info">
+                        <div class="info-one">
+                            <div class="info-title">音符总计：</div>
+                            <div class="info-content">123 (10 Tap, 11 Drag, 12 Flick, 13 Hold)</div>
+
+                        </div>
+                        <div class="sub-info" style="margin-left: 20px;">
+                            <div class="info-one">
+                                <div class="info-title">实际物量：</div>
+                                <div class="info-content">123 (10 Tap, 11 Drag, 12 Flick, 13 Hold)</div>
+                            </div>
+                            <div class="info-one">
+                                <div class="info-title">假音符：</div>
+                                <div class="info-content">0 (0 Tap, 0 Drag, 0 Flick, 0 Hold)</div>
+                            </div>
+                        </div>
+                        <div class="info-one">
+                            <div class="info-title">判定线总数：</div>
+                            <div class="info-content">10 (1 装饰, 2 隐形, 3 正常, 4 无用)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="operations" style="display: flex; justify-content: right;">
+                <img src="/static/icon/ellipsis.svg" style="background-color: #ffffff; border-radius: 10px; padding: 10px; box-shadow: 0 0 10px #00000030;">
+                <div style=" margin-left: 20px; height: 40px; padding: 10px 30px; background-color: #5151ff; border-radius: 10px; box-shadow: 0 0 10px #00000030;"><img src="/static/icon/play.svg" style="filter: invert(1);"></div>
+            </div>
+        </div>
+    </div>
+    <div class="black-curtain" style="display: none"></div>
+{% endblock body %}

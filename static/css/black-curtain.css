@@ -1,0 +1,13 @@
+.black-curtain {
+    position: fixed;
+    background-color: black;
+    height: 100%;
+    width: 200%;
+    z-index: 999;
+    transform: skewX(-15deg) translateX(70%);
+    transition: 1s ease-in;
+}
+
+.black-curtain.show {
+    transform: skewX(-15deg) translateX(-20%);
+}

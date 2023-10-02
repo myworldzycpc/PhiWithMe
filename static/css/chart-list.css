@@ -1,0 +1,80 @@
+.chart-list-box {
+    position: fixed;
+    left: 280px;
+    top: 50px;
+    height: calc(100% - 50px);
+    width: calc(100% - 280px);
+    overflow-y: scroll;
+    user-select: none;
+}
+
+.chart-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+    gap: 20px;
+    padding: 80px 20px;
+}
+
+.chart {
+    width: 300px;
+    background-color: #F0F0F0;
+    outline: 1px solid #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.chart .illustration {
+    background-image: url("/static/test/Phigros Themes.png");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+.chart .info {
+    padding: 10px;
+}
+
+.chart .title {
+    float: left;
+    font-size: 26px;
+}
+
+.chart .length {
+    float: right;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #E0E0E0;
+    padding: 5px;
+}
+
+.chart .info-bottom {
+    display: flex;
+    width: 100%;
+}
+
+.chart .little {
+    /* float: left; */
+    color: #606060;
+}
+
+.chart .little-info .avatar {
+    height: 20px;
+}
+
+.chart .operations {
+    /* float: right; */
+    display: flex;
+    flex: 2;
+    justify-content: right;
+    align-items: end;
+}
+
+.chart .operation-btn {
+    border-radius: 8px;
+    /*background-color: #6185ff;*/
+    color: #808080;
+    padding: 8px 16px;
+    font-size: 12px;
+    text-align: right;
+}
+

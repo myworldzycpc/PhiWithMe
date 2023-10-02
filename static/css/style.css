@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex img {
+    height: 20px;
+    margin-top: 15px;
+}
+
+[data-pressure-scale] {
+    transition: 0.1s ease-out;
+    touch-action: none;
+}
+

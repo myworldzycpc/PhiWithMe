@@ -1,0 +1,80 @@
+.top-right {
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    margin: 15px 30px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #F0F0F0;
+    z-index: 999;
+    transition: 0.1s;
+}
+
+.search-box {
+    display: flex;
+    background: white;
+    margin: 0 10px;
+    border-radius: 5px;
+    outline: 1px solid #E0E0E0;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box:has(:focus) {
+    outline: 3px solid #6974f580;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 0 15px;
+}
+
+.top-right img {
+    height: 20px;
+    padding: 4px;
+    transition: 0.1s;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.top-right img:hover {
+    background-color: #00000010;
+}
+
+.top-right img:active {
+    background-color: #00000030;
+}
+
+.filter-sort-box {
+    border-radius: 5px;
+    outline: 1px solid #E0E0E0;
+    background: white;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-box {
+    border-radius: 5px;
+    outline: 1px solid #E0E0E0;
+    background: white;
+    padding: 0 5px;
+    margin: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.multi-box {
+    border-radius: 5px;
+    outline: 1px solid #E0E0E0;
+    background: white;
+    padding: 0 5px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
